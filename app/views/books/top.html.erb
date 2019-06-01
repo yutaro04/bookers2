@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.container{
+			margin: 0 115px;
+			padding: 0 15px;
+		}
+		.btn{
+			margin-bottom: 0;
+		}
+		.btn-login{
+			background-color: blue;
+		}
+		.btn-signup{
+			background-color: green;
+		}
+		button{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<h1>welcome to <span class="glyphicon glyphicon-book" aria-hidden="true"></span>Bookers!!</h1>
+	<p>In <span class="glyphicon glyphicon-book" aria-hidden="true"></span><b>Bookers,</b><br>you can share and exchange your opinions , inpressions , and emotions<br>about varioius books!</p>
+	<button type="button" class="btn btn-login btn-block"><%=link_to "Log in" , user_session_path %></button>
+	<button type="button" class="btn btn-signup btn-block"><%= link_to "Sign up" , new_user_registration_path %></button>
+    </div>
+</body>
+</html>
+
+
